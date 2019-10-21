@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Christopher Stanley - Front End Developer</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="/style.css" type="text/css">
+    <script type="text/javascript" src="/index.js"></script>
 </head>
 <body class="container-grid">
     <header class="header container-flex">
@@ -16,24 +20,30 @@
         </a>
         <nav class="header_nav">
             <ul>
-                <li class="header_nav-link"><a href="#projects">Projects</a></li>
-                <li class="header_nav-link"><a href="#about">About</a></li>
-                <li class="header_nav-link"><a href="#contact">Contact</a></li>
-                <li class="header_nav-link">
-                    <a href="mailto:chris@cbstanley.tech">
-                        Email
-                    </a>
-                </li>
-                <li class="header_nav-link">
-                    <a href="https://github.com/CBStanley12" target="_blank">
-                        GitHub
-                    </a>
-                </li>
+                <a href="#about" class="header_nav-link">
+                    <li>About</li>
+                </a>
+                <a href="#projects" class="header_nav-link">
+                    <li>Projects</li>
+                </a>
+                <a href="#interests" class="header_nav-link">
+                    <li>Interests</li>
+                </a>
+                <a href="#contact" class="header_nav-link">
+                    <li>Contact</li>
+                </a>
+                <a href="mailto:chris@cbstanley.tech" class="header_nav-link">
+                    <li><i class="far fa-envelope"></i></li>
+                </a>
+                <a href="https://github.com/CBStanley12" class="header_nav-link" target="_blank">
+                    <li><i class="fab fa-github"></i></li>
+                </a>
             </ul>
         </nav>
     </header>
     <main class="main">
         <div class="hero"></div>
+        <div class="about"></div>
         <div class="projects"></div>
         <div class="interests"></div>
         <div class="contact"></div>
