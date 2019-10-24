@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Overpass:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Short+Stack&display=swap');
 
 :root {
     --clr-main: #D63031;
@@ -11,7 +12,7 @@
 * { box-sizing: border-box; }
 
 a { text-decoration: none; }
-
+ 
 html, body {
     color: var(--color-secondary);
     font-family: "Overpass", sans-serif;
@@ -26,7 +27,7 @@ ul { list-style-type: none; }
 
 .about {
     background-color: blue;
-    height: calc(100vh - 3.8rem);
+    height: 70vh;
 }
 
 .about_img {
@@ -48,26 +49,24 @@ ul { list-style-type: none; }
 
 .container-grid {
     display: grid;
-    grid-template-rows: 3.8rem 1fr 6rem;
+    grid-template-rows: 3.8rem repeat(4, 1fr) 10rem;
     grid-template-columns: 1fr;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    height: 100%;
+    justify-items: center;
     width: 100vw;
 }
 
 .footer {
+    background-color: gray;
     grid-area: footer;
 }
 
-.header, .main {
-    max-width: 100rem;
-    padding: 0 2rem;
+.header {
+    background-color: white;
+    height: 3.8rem;
+    padding: 0 3rem;
+    position: sticky;
+    top: 0;
 }
-
-.header { grid-area: header; }
 
 .header_logo {
     width: 30%;
@@ -88,4 +87,42 @@ ul { list-style-type: none; }
     color: var(--clr-main);
 }
 
-.main { grid-area: main; }
+.hero {
+    height: calc(98vh - 3.8rem);
+    width: 100%;
+}
+
+.hero_content {
+    margin: auto;
+    max-width: 70rem;
+    padding: 0 5rem;
+}
+
+.hero_img {
+    border-radius: 10px;
+    height: auto;
+    width: 15rem;
+}
+
+.hero_text {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.hero_title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.interests {
+    background-color: purple;
+    grid-area: interests;
+    height: 40vh;
+}
+
+.projects {
+    background-color: green;
+    grid-area: projects;
+    height: 120vh;
+}
